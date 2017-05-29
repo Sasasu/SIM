@@ -1,0 +1,24 @@
+05-29 21:30:38.995 29504-29504/sasasu.github.io.sim E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                      Process: sasasu.github.io.sim, PID: 29504
+                                                                      Theme: themes:{default=overlay:com.materialuptheme.victorburgoa, iconPack:system, com.android.systemui=overlay:com.materialuptheme.victorburgoa, com.android.systemui.navbar=overlay:com.materialuptheme.victorburgoa}
+                                                                      java.lang.RuntimeException: Error receiving broadcast Intent { act=sasasu.github.io.sim.broadcast.new_message_ready flg=0x10 } in sasasu.github.io.sim.ChatActivity$ChatLogReceiver@3535920
+                                                                          at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:892)
+                                                                          at android.os.Handler.handleCallback(Handler.java:739)
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                          at android.os.Looper.loop(Looper.java:148)
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:5461)
+                                                                          at java.lang.reflect.Method.invoke(Native Method)
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+                                                                          at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:102)
+                                                                       Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.ListView.setAdapter(android.widget.ListAdapter)' on a null object reference
+                                                                          at sasasu.github.io.sim.ChatActivity$ChatLogReceiver.onReceive(ChatActivity.java:73)
+                                                                          at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:882)
+                                                                          at android.os.Handler.handleCallback(Handler.java:739) 
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:95) 
+                                                                          at android.os.Looper.loop(Looper.java:148) 
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:5461) 
+                                                                          at java.lang.reflect.Method.invoke(Native Method) 
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726) 
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616) 
+                                                                          at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:102) 
